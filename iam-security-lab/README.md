@@ -54,3 +54,12 @@ IAM is the foundation of AWS security and follows the principle of least privile
 ### AdministratorAccess Policy Assigned
 
 ![IAM Policy](screenshots/iam-admin-access-policy.png)
+
+## Additional IAM Concepts Learned
+
+- IAM Roles provide temporary permissions.
+- Users can assume roles when elevated access is required.
+- AWS follows the Principle of Least Privilege.
+- Users require sts:AssumeRole permission before assuming a role.
+What I see you did correctly
+
