@@ -1,28 +1,27 @@
 # IAM Security Lab
 
 ## Objective
-
 Learn how AWS Identity and Access Management (IAM) controls access to AWS resources.
 
 ## AWS Services Used
-
 - AWS IAM
 
 ## Tasks Completed
-
 - Created IAM User
 - Created IAM Group
-- Assigned AdministratorAccess policy
-- Logged in using IAM credentials
+- Assigned AdministratorAccess Policy
+- Logged in using IAM Credentials
+- Created IAM Role
+- Configured sts:AssumeRole Permission
+- Verified Role Switching
 
 ## Business Value
-
 IAM helps organizations control who can access cloud resources and what actions they can perform.
 
 ## Key Concepts Learned
 
 ### User
-Represents an individual person.
+Represents an individual person or application identity.
 
 ### Group
 Collection of users with similar permissions.
@@ -31,35 +30,27 @@ Collection of users with similar permissions.
 Defines permissions using JSON.
 
 ### Role
-Provides temporary permissions.
-
-## Screenshots
-
-To be added.
-
-## Lessons Learned
-
-IAM is the foundation of AWS security and follows the principle of least privilege.
+Provides temporary permissions that can be assumed when needed.
 
 ## Screenshots
 
 ### IAM User Created
-
 ![IAM User](screenshots/iam-user-faizaws3.png)
 
 ### User Added to Admin Group
-
 ![IAM Group](screenshots/iam-group-admin2.png)
 
 ### AdministratorAccess Policy Assigned
-
 ![IAM Policy](screenshots/iam-admin-access-policy.png)
 
 ## Additional IAM Concepts Learned
-
 - IAM Roles provide temporary permissions.
 - Users can assume roles when elevated access is required.
 - AWS follows the Principle of Least Privilege.
-- Users require sts:AssumeRole permission before assuming a role.
-What I see you did correctly
+- Users require `sts:AssumeRole` permission before assuming a role.
 
+## Lessons Learned
+- IAM is the foundation of AWS security.
+- Permissions should be granted using the Principle of Least Privilege.
+- Groups simplify permission management.
+- Roles provide a secure way to grant temporary access.
